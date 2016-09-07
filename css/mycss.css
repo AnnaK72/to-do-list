@@ -33,7 +33,7 @@ body{
 	font-size: 20px;
 }
 .add-btn{
-	padding: 10px;
+	padding: 7px 10px;
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 18px;
 	background: none;
@@ -41,7 +41,7 @@ body{
 	border-radius: 5px;
 }
 input{
-	height: 30px;
+	height: 35px;
 	border-radius: 3px;
 
 }
