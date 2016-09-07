@@ -1,0 +1,54 @@
+body{
+	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-family:  'Gloria Hallelujah', cursive;
+	font-size: 18px;
+	color: #2F4F4F;
+	
+	}
+
+h1, h2, h3{
+	font-family:  'Gloria Hallelujah', cursive;
+}	
+.center{
+	text-align: center;
+}
+
+
+button:focus {
+	outline:0;
+}	
+
+.add-btn:active{
+	border: 2px solid white;
+	}
+body{
+	background-image: url("../img/flowers.jpg");
+	background-color: #cccccc;
+}
+
+.delete-btn{
+	float: right;
+	background: none;
+	border: none;
+	font-size: 20px;
+}
+.add-btn{
+	padding: 10px;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 18px;
+	background: none;
+	border: 2px solid gray;
+	border-radius: 5px;
+}
+input{
+	height: 30px;
+	border-radius: 3px;
+
+}
+#error{
+	display:none;
+}
+
+li{
+	list-style-type: none;
+}	

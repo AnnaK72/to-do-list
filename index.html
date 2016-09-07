@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My To Do List </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" type = "text/css"  href = "css/mycss.css"  >
+<link href="https://fonts.googleapis.com/css?family=Calligraffitti|Gloria+Hallelujah|Indie+Flower" rel="stylesheet">
+<style type="text/css">
+
+</style>
+
+
+</head>
+
+<body data-ng-app="myModule">
+	<div class="container" data-ng-controller="AppCtrl">
+		<h2 class="center">My To Do List</h2>
+		<h3 class="center">Create a new task
+		</h3>
+		<p class="center">		
+			<input  id="name" type="text" ng-model="newTask.name" placeholder="name">
+		</p>
+		<p class="center">
+			<input type="text" ng-model="newTask.description" placeholder="detail">
+		</p>
+		<p class="center">
+			<button class="center add-btn" ng-click="addNewTask()"> Add Task</button>
+			<span id="error">You must enter a task name!</span>
+		</p>
+		<h3 class="center">My Tasks</h3>
+		<ul>
+			<li data-ng-repeat="currentItem in tasks">{{currentItem.name + ": "}}{{currentItem.description}} 
+				<button class="delete-btn" ng-click="delete($index)">X</button>
+				<br><br>
+			</li>
+			
+
+		</ul>
+		
+		
+		
+	</div>
+
+
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src ="js/angular.min.js"  type = "text/javascript"></script>
+<script src="js/myScript.js" type = "text/javascript"></script>
+
+
+
+
+</body>
+
+
+</html>
