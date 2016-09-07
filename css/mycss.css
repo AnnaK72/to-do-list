@@ -51,4 +51,7 @@ input{
 
 li{
 	list-style-type: none;
-}	
+}
+input:focus{
+	outline: black;
+}
