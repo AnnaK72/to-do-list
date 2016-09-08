@@ -30,7 +30,7 @@
 		</p>
 		<h3 class="center">My Tasks</h3>
 		<ul>
-			<li data-ng-repeat="currentItem in tasks">{{currentItem.name + ": "}}{{currentItem.description}} 
+			<li data-ng-repeat="currentItem in tasks">{{currentItem.name + " - "}}{{currentItem.description}} 
 				<button class="delete-btn" ng-click="delete($index)">X</button>
 				<br><br>
 			</li>
